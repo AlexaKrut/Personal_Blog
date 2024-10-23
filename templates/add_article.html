@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Добавить статью</h2>
+<form method="POST">
+    <label for="title">Заголовок:</label>
+    <input type="text" name="title" required>
+    <label for="content">Содержание:</label>
+    <textarea name="content" required></textarea>
+    <button type="submit">Сохранить</button>
+</form>
+<a href="{{ url_for('admin_panel') }}">Назад к админке</a>
+{% endblock %}

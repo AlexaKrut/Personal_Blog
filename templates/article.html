@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ article['title'] }}</h2>
+<p>{{ article['content'] }}</p>
+<p><em>Дата публикации: {{ article['date'] }}</em></p>
+<a href="{{ url_for('admin_panel') }}">Назад к админке</a>
+{% endblock %}
